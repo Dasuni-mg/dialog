@@ -1,0 +1,411 @@
+@use 'theme-colors' as c;
+@use './custom-styles.scss';
+
+@font-face {
+  // font-family: "Poppins-Regular";  
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-M.ttf");
+}
+
+@font-face {
+  // font-family: "Poppins-Regular";  
+  font-family: "Ubuntu-light";
+  src: url("../fonts/Ubuntu-L.ttf");
+}
+
+/* fallback */
+// @font-face {
+//   font-family: "Material Symbols Outlined";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url(../fonts/google_material_icons.woff2) format("woff2");
+// }
+
+@font-face {
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MaterialSymbolsOutlined-Thin.ttf") ;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: c.$white;
+  font: 15px/1 "Ubuntu" !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+* {
+  font-family: "Ubuntu"
+}
+
+img {
+  max-width: 100%;
+  border: none !important;
+}
+
+.max_width_none{
+  max-width: none !important;
+}
+
+p {
+  font: 15px/1 "Ubuntu-light" !important;
+  // font: 15px/1 "Ubuntu" !important;
+  line-height: 23px !important;
+  letter-spacing: 0px !important;
+  color: #565656;
+  margin-bottom: 0px !important;
+  word-break: break-word !important;
+}
+
+a {
+  text-decoration: none !important;
+  font-family: "Ubuntu" !important;
+  letter-spacing: 0px !important;
+  color: #565656;
+}
+
+a:visited {
+  letter-spacing: 0px !important;
+  color: #565656 !important;
+}
+
+a:hover {
+  color: #2CA4DF !important;
+}
+
+p a {
+  text-decoration: none;
+  color: #565656;
+}
+
+p a:visited {
+  text-decoration: none;
+  color: #565656 !important;
+}
+
+p a:active {
+  text-decoration: none;
+  color: #565656 !important;
+}
+
+p a:hover {
+  text-decoration: none;
+  color: #2CA4DF !important;
+}
+
+h1 {
+  font: 56px/1 "Ubuntu" !important;
+  letter-spacing: -1px !important;
+  line-height: 48px !important;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  text-decoration: none;
+  word-break: break-word !important;
+}
+
+h2 {
+  font: 35px/1 "Ubuntu" !important;
+  line-height: 41px !important;
+  letter-spacing: -1px !important;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  text-decoration: none;
+  word-break: break-word !important;
+}
+
+h3 {
+  font: 21px/1 "Ubuntu-light" !important;
+  line-height: 28px !important;
+  letter-spacing: -1px !important;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  text-decoration: none;
+  word-break: break-word !important;
+}
+
+h4{
+   font: 29px/1 "Ubuntu-light" !important;
+  // line-height: 28px !important;
+  letter-spacing: 0px !important;
+  text-rendering: optimizelegibility;
+  font-weight: normal;
+  text-decoration: none;
+  word-break: break-word !important;
+  margin: 0;
+}
+
+// Structure --------------------------------------
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.ms-auto{
+  margin-inline-start: auto
+}
+
+
+// --------------------------------
+
+// Font weight --------------------------
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-500 {
+  font-weight: bold;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.font-light{
+  font-family: "Ubuntu-light";
+}
+// Font weight ------------------
+
+
+// Font size -------------------
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-21 {
+  font-size: 21px;
+}
+// Font size --------------------------
+
+// line height --------------------------
+.lh-2 {
+  line-height: 2;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+// line height --------------------------
+
+
+// Spacing ---------------------------------
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.ml-15{
+  margin-left: 15px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-21 {
+  margin-bottom: 21px;
+}
+
+.mb-13 {
+  margin-bottom: 13px;
+}
+
+.mb-3 {
+  margin-bottom: 3px;
+}
+.mt-70{
+  margin-top: 70px;
+}
+
+.mt-21{
+  margin-top: 21px;
+}
+.my-10{
+  margin: 10px auto;
+}
+
+.my-21{
+  margin: 21px 0;
+}
+.pb-80 {
+  padding-bottom: 10px;
+}
+.p-20{
+  padding: 20px;
+}
+
+.p-10{
+  padding: 10px;
+}
+.p-15{
+  padding:15px;
+}
+
+// Spacing ---------------------------------
+
+
+// letter spacing --------------------------
+.letter-spacing-3 {
+  letter-spacing: -3px;
+}
+
+.letter-spacing-4 {
+  letter-spacing: -4px;
+}
+// letter spacing --------------------------
+
+// background colors--------------------------
+
+.bg-white {
+  background-color: c.$white;
+}
+
+.bg-yellow {
+  background-color: c.$yellow-primary;
+}
+
+.bg-red-primary {
+  background-color: c.$red-primary;
+}
+
+.bg-red-secondary {
+  background-color: c.$red-secondary;
+}
+
+.bg-dark-primary {
+  background-color: c.$dark-primary;
+}
+
+// background colors--------------------------
+
+// text colors--------------------------
+.text-yellow {
+  color:  c.$yellow-primary;
+}
+
+.txt-primary {
+  color: c.$dark-primary;
+}
+
+.gray-primary {
+  color: c.$gray-primary;
+}
+
+.gray-secondary {
+  color: c.$gray-secondary;
+}
+
+.gray-tertiary{
+  color: c.$gray-tertiary;
+}
+
+.white{
+  color: c.$white;
+}
+
+// text colors--------------------------
+
+// shadows--------------------------
+.shadow1 {
+  box-shadow: inset 0 4px 10px c.$shadow;
+}
+
+//shadows--------------------------
+
+//main 
+.fluid-width {
+  width: 100%;
+  height: auto;
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+
+.common-container {
+  // border: 1px solid c.$red-primary;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  padding: 0px 16px;
+}
+
+.common-container-grid {
+  // border: 1px solid c.$red-primary;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+}
+
+//header sections devider
+.section-line {
+  border: 1px solid c.$dark-primary;
+  width: 35px;
+  margin: 20px auto 35px auto;
+}
+.overflow-visible{
+  overflow: visible !important;
+}
+
+
+// test ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+
+
+.txt-justify{
+text-align: justify;
+}
