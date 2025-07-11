@@ -9,7 +9,9 @@ HTML5, CSS3, SCSS, Bootstrap 5
 
 🌐 Live Demo:
 https://dasuni-mg.github.io/dialog/
+
 ![Preview](https://github.com/Dasuni-mg/dialog/blob/main/c1.png)
 
 https://dasuni-mg.github.io/dialog/deliver
+
 ![Preview](https://github.com/Dasuni-mg/dialog/blob/main/c2.png)
